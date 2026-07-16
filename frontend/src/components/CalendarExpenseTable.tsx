@@ -142,7 +142,7 @@ export function CalendarExpenseTable({
                     gap: "0.5rem",
                   }}
                 >
-                  <span>{getCategoryEmoji(expense.category)}</span>
+                  <span>{expense.category_emoji || getCategoryEmoji(expense.category)}</span>
                   <span>{expense.category}</span>
                 </span>
               </td>
